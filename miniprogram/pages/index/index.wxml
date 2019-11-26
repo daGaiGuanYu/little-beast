@@ -1,0 +1,3 @@
+<view class="container">
+  <view class="btn" bindtouchstart="start" bindtouchend="end">{{txt}}</view>
+</view>

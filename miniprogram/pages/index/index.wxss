@@ -1,0 +1,40 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn{
+  width: 300rpx;
+  line-height: 300rpx;
+  border-radius: 150rpx;
+  box-shadow: 0 0 10rpx #000;
+  text-align: center;
+  color: #555;
+  font-weight: bolder;
+}
+
+@keyframes go {
+  20% {
+    transform: scale(1.2, 1.2);
+    box-shadow: 0 0 20rpx red;
+    color: red;
+  }
+  30%{
+    transform: translate(20rpx, 4rpx)
+  }
+  50%{
+    transform: translate(14rpx, 14rpx)
+  }
+  80%{
+    transform: translate(14rpx, -14rpx)
+  }
+  100%{
+    transform: translate(-14rpx, -14rpx)
+  }
+}
+
+.btn:active{
+  animation: go 0.3s infinite
+}
